@@ -11,11 +11,13 @@ import org.junit.Test;
 import br.sceweb.model.Empresa;
 import br.sceweb.model.EmpresaDAO;
 import br.sceweb.servico.ConfiguraDB;
+
 /**
  * Este script de teste verifica o comportamento do caso de uso UC01CadastrarEmpresa
  * @author professor
- *
+ * @version 1
  */
+
 public class UC01CadastrarEmpresa {
 	static EmpresaDAO empresaDAO;
 	static Empresa empresa;
@@ -26,7 +28,7 @@ public class UC01CadastrarEmpresa {
 		String url = "jdbc:mysql://localhost/sceweb";
 		String driver = "com.mysql.jdbc.Driver";
 		String usuario = "root";
-		String senha = "";
+		String senha = "alunofatec";
 		configuraDB = new ConfiguraDB(url, driver,usuario,senha);
 		empresaDAO = new EmpresaDAO(configuraDB);
 		empresa = new Empresa();
@@ -62,7 +64,7 @@ public class UC01CadastrarEmpresa {
 		String url = "jdbc:mysql://localhost/sceweb1";
 		String driver = "com.mysql.jdbc.Driver";
 		String usuario = "root";
-		String senha = "";
+		String senha = "alunofatec";
 		configuraDB1 = new ConfiguraDB(url, driver,usuario,senha);
 		empresaDAO = new EmpresaDAO(configuraDB);
 		empresa = new Empresa();

@@ -15,10 +15,18 @@ public class Empresa {
 	String endereco;
 	String telefone;
 
+	/**
+	 * 
+	 * @return o cnpj atual
+	 */
 	public String getCnpj() {
 		return cnpj;
 	}
-	
+	/**
+	 * 
+	 * @param cnpj atual para entrar 
+	 * @return cnpj caso seja um número válido ou mensagem caso cnpj seja inválido
+	 */
 	
 	public String setCnpj(String cnpj) {
 		String msg="";

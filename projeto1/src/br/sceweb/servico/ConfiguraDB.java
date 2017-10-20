@@ -1,5 +1,10 @@
 package br.sceweb.servico;
 
+/**
+ * Essa classe é responsável pela conexão ao banco de dados, espera por entrada de váriaveis
+ * @author Lab103
+ * @version 1
+ */
 public class ConfiguraDB {
 	String url = "";
 	String driver = "";
